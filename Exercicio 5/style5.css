@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(122, 121, 121);
+    font: normal 15pt Arial;
+}
+
+#geral{
+    outline: rgb(99, 0, 0) 2px solid;
+    padding: 1px 20px 1px 20px; 
+    width: 400px; 
+    margin: 0 auto;
+}
+
+.entrada {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+#resultado {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    color: rgb(29, 202, 29); 
+    }

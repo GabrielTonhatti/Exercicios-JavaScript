@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(125, 128, 131);
+    font: normal 10pt Arial;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(112, 111, 218);
+    color: rgb(71, 68, 196);
+}
+
+#geral {
+    width: 400px;
+    margin: 60px auto;
+}
+
+h1 {
+    color: rgb(170, 202, 81);
+    text-align: center;
+}
+
+#conteiner {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: rgb(200, 200, 224);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h2 {
+    padding-bottom: 40px;
+}
+
+.entrada {
+    padding: 10px;
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+button {
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+}
+
+#resultado,
+#salarioF {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+}
