@@ -6,13 +6,49 @@
     <meta charset="utf-8" />
 
     <script src="script5.js"></script>
-    <link rel="stylesheet" href="style5.css">
-    </style>
+    <link rel="stylesheet" href="style5.css"></style>
 
 </head>
 
 <body>
-
+    <div id = "geral">
+        <h1> Exercício 5 - Lista 2</h1>
+        <div id = "conteiner">
+            <h2> Digite dois números: </h2>
+            <div class = "entrada">
+                <label for = "num1"> 1º Número: </label>
+                <input type = "number" id = "num1"/>
+            </div>
+            <div class = "entrada">
+                <label for = "num2"> 2º Número: </label>
+                <input type = "number" id = "num2"/>
+            </div>
+            <div class = "entrada">
+                <label for = "opcao"> Opção: </label>
+                <input type = "number" id = "opcao"/>
+            </div>
+            <div>
+                <button type = "button" onclick = "calcula()"> Calcular </button>
+            </div>
+            <div class = "opcoes">
+                <p>
+                    Opções:
+                </p>
+                <p>
+                    1 - Média entre os dois números;
+                </p>
+                <p> 
+                    2 - Diferença do maior pelo menor; 
+                </p>
+                <p> 
+                    3 - Produto entre os números digitados; 
+                </p>
+                <p> 
+                    4 - Divisão do primeiro pelo segundo; 
+                </p>
+            </div>
+            <div id = "resultado"></div>
+        </div>
+    </div>
 </body>
-
 </html>
