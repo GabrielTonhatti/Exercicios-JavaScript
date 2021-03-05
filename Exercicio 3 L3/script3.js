@@ -9,7 +9,7 @@ function Calc() {
     let etaria5 = 0
 
     for (i = 1; i <= 8; i++) {
-        idade = Number(prompt(`Digite o nome da ${i}º pessoa:`))
+        idade = Number(prompt(`Digite a idade da ${i}º pessoa:`))
 
         if (idade <= 15) {
             etaria1++
