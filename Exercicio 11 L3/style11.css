@@ -1,0 +1,55 @@
+body {
+    background-image: url("pro-audi-full-01.jpg");
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#geral {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#conteiner {
+    width: 670px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+button {
+    padding: 15px;
+    width: 130px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+button:hover {
+    transform: scale(1.10);
+}
+
+table {
+    margin-top: 90px;
+}
+
+td {
+    width: 150px;
+    height: 20px;
+}
+
+input {
+    margin-top: 50px ;
+}
+
+/*button Parcela {
+    margin-top: 90px;
+}*/
+
+@media screen and (min-width: 768px) {
+    body {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

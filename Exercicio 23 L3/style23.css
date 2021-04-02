@@ -1,0 +1,50 @@
+body {
+    background-image: url("138728.jpg");
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#geral {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#conteiner {
+    width: 450px;
+    height: 500px;
+    background-image: url("black\ bule\ 8x10-2.jpg");
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+h2 {
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Salario {
+    margin-top: 90px;
+    margin-left: 0 auto;
+}
+
+#Ferias, #DecimoTerceiro {
+    margin-right: 0 auto;
+    text-align: center;
+}
+
+button {
+    padding: 20px;
+    width: 120px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #3e4dec;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button:hover {
+    transform: scale(1.10);
+    background-color: #2333dd;
+}

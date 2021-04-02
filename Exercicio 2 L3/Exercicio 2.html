@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Exercicio 2 - Lista 3 </title>
+
+    <script src = 'script2.js'></script>
+    <link rel="stylesheet" href = "style2.css"/>
+
+</head>
+
+<body>
+    <div id='geral'>
+        <h1> Exercicio 2 </h1>
+        <div id='conteiner'>
+            <h2> Companhia de ingressos </h2>
+            <!-- <img src='Tabela_Ingressos.png' alt='Sign' /> -->
+            <h3> Tabela de Vendas: </h3>
+            <h4> Clique no botão para mostrar a tabela. </h4>
+            <div>
+                <button type="button" onclick='Calcular()'> Tabela </button>
+            </div>
+            <div class = 'table__conteiner'>
+                <table class = "table">
+                    <!-- tabela -->
+                    <thead>
+                        <tr>
+                            <!-- tabela row é a criação da uma linha-->
+                            <th>
+                                <!-- tabela header é a coluna de cabeçalho -->
+                                Preço:
+                            </th>
+                            <th>
+                                Quantidade:
+                            </th>
+                            <th>
+                                Desconto:
+                            </th>
+                            <th>
+                                Lucro:
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id = 'dadosTabela'>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
