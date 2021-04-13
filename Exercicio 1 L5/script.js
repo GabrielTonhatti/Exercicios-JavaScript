@@ -1,33 +1,34 @@
 function Ex1() {
     let opcao = 0;
-    let Vendedor = [];
+    let Funcionario = [];
     let vendas = [];
+    let achou = 0;
+    let i = 0;
 
     function NovoVendedor() {
-        for (let i = 0; i < 4; i++) {
+        while (Funcionario.length != 4) {
             let objeto = new Object();
-            let existe = [];
-            let comparacao = [];
 
             objeto.vendedor = prompt(`Digite o código do ${i + 1}º vendedor: `)
 
-            for (let j = 2; j < 6; j++) {
-
-                existe.push(objeto)
-                comparacao.push(objeto)
-
-                while (comparacao[i] === existe[j]) {
-                    if (comparacao[i] === existe[j]) {
-                        alert("Já existe um vendedor com este código!")
-                        objeto.vendedor = prompt(`Digite o código do ${i + 1}º vendedor: `)
-
-                    } else {
-                        Vendedor.push(objeto)
-                    }
+            for (let j = 0; j < Funcionario.length; j++) {
+                if (Funcionario[j].vendedor == objeto.vendedor) {
+                    achou = 1
+                    alert('Vendedor já cadastrado!')
+                    objeto.vendedor = prompt(`Digite o código do ${i + 1}º vendedor: `)
+                } else {
+                    achou = 0
                 }
             }
+
+            if (achou == 0) {
+                Funcionario.push(objeto)
+            }
+            i++
         }
     }
+
+    console.log(Funcionario)
 
     function Vendas() {
         for (let i = 0; i < 4; i++) {
@@ -37,16 +38,16 @@ function Ex1() {
             objeto.mes = prompt(`Digite o mês da venda do funcionário:`)
             vendas.push(objeto)
 
-            for (let c = 1; c < 5; c++) {
-                if (vendas[i].codigo == vendas[c].codigo && vendas[i].mes == vendas[c].mes) {
-                    alert('Já foi registrado uma venda para esse funcionário nesse mês!!!')
-                }
+            if (vendas[i].codigo == objeto.codigo && vendas[i].mes == objeto.mes) {
+                achou = 1
+                alert('Já foi registrado uma venda para esse funcionário nesse mês!!!')
+            } else {
+                achou = 0
             }
 
-
-
-            console.log(vendas[i])
         }
+        console.log(vendas)
+
     }
 
     while (opcao != 7) {
