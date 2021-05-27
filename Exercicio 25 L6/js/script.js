@@ -9,32 +9,32 @@ function exercicio25() {
     let MaiorPreco = 0;
     let custoEstoque = [];
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 10; i++) {
         precos[i] = Number(prompt(`Digite o preço do ${i + 1}º produto: R$`));
     }
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
         estoque[i] = [];
         totalEstoque[i] = 0;
-        for (let j = 0; j < 4; j++) {
+        for (let j = 0; j < 10; j++) {
             estoque[i][j] = Number(prompt(`Digite a quantidade do ${j + 1}º produto estocado no ${i + 1}º armazém: `))
             totalEstoque[i] += estoque[i][j];
         }
     }
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 10; i++) {
         totalProdutos[i] = 0;
-        for (let j = 0; j < 3; j++) {
+        for (let j = 0; j < 5; j++) {
             totalProdutos[i] += estoque[j][i];
         }
     }
 
     MaiorPreco = precos[0]
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
         MaiorArmazenada[i] = estoque[i][0]
         MenorArmazenada[i] = estoque[i][0]
-        for (let j = 0; j < 4; j++) {
+        for (let j = 0; j < 10; j++) {
             if (estoque[i][j] > MaiorArmazenada[i]) {
                 MaiorArmazenada[i] = estoque[i][j]
                 MaiorPreco = precos[j]
@@ -65,9 +65,9 @@ function exercicio25() {
     alert(`O preço do produto com maior estoque é ${(MaiorPreco).toFixed(2).replace('.',',')}`)
     alert(`O menor estoque tem ${MenorEstoque} unidades`)
     
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
         custoEstoque[i] = 0;
-        for(let j = 0; j < 4; j++) {
+        for(let j = 0; j < 10; j++) {
             custoEstoque[i] += precos[j] * estoque[i][j]
         }
 

@@ -81,8 +81,6 @@ function exercicio25() {
         }
     }
 
-
-
     console.log(totalEstoque)
     console.log('Maior estoque', MaiorArmazenada)
     console.log('Vetor Menor estoque', MenorArmazenada)
